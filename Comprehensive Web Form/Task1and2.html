@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Comprehensive Web Form</title>
+</head>
+<body>
+    <h1>Task 1 & 2</h1>
+    <form action="/survey" method="post" aria-labelledby="form-heading">
+        <h2 id="form-heading">Coding Survey</h2>
+   
+        <h3><label for="coding_language">Coding Language Preference:</label></h3>
+        <select id="coding_language" name="coding_language" aria-required="true">
+            <option value="python">Python</option>
+            <option value="c++">C++</option>
+            <option value="ruby">Ruby</option>
+        </select><br>
+
+        <br><hr>
+
+        <h3><legend id="skill_level">Coding Skill Level:</legend></h3>
+        <fieldset aria-labelledby="skill_level">
+            <input type="radio" id="beginner" name="laguage" value="beginner" required>
+            <label for="beginner">Beginner</label><br>
+
+            <input type="radio" id="intermediate" name="laguage" value="intermediate" required>
+            <label for="intermediate">Intermediate</label><br>
+
+            <input type="radio" id="advanced" name="laguage" value="advanced" required>
+            <label for="advanced">Advanced</label><br>
+        </fieldset>    
+        <br><hr>
+
+        <h3><legend id="platform_preference">Coding Platform Preference(s):</legend></h3>
+        <fieldset aria-labelledby="platform_preference">
+            <input type="checkbox" id="desktop" name="coding_platform" value="desktop">
+            <label for="desktop">Desktop</label><br>
+            <input type="checkbox" id="web" name="coding_platform" value="web">
+            <label for="web">Web</label><br>
+            <input type="checkbox" id="mobile" name="coding_platform" value="mobile">
+            <label for="mobile">Mobile</label><br>
+        </fieldset>
+    </form>
+
+
+</body>
+</html>
